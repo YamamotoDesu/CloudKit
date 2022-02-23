@@ -151,7 +151,7 @@ extension Establishment: Hashable {
 }
 ```
 
-### Run your App and check out your received data
+### Run your App and Check out your received data
 <img width="1227"  src="https://user-images.githubusercontent.com/47273077/155268430-e80a947a-ca6e-4bfc-b1b9-cb4e75d81f6e.png">
 
 
