@@ -43,11 +43,21 @@ final class Note {
 
 extension Array where Element == Note {
   init() async throws {
-    self = []
+    self = try await CKContainer.default().privateCloudDatabase
+      .records(
+        matching: .init(
+          recordType: "\(Note.self)",
+          predicate: .init(value: true)
+        )
+      )
+      .matchResults.map { try Note(record: $1.get())}
   }
 
   init(references: [CKRecord.Reference]) async throws {
-    self = []
+    self = try await CKContainer.default().privateCloudDatabase
+      .records(for: references.map(\.recordID))
+      .values
+      .map {try Note(record: $0.get()) }
   }
 }
 
