@@ -1,5 +1,9 @@
 # [CloudKit](https://github.com/raywenderlich/video-ck-materials)
 
+<img width="803" src="https://user-images.githubusercontent.com/47273077/155275069-45b3d527-24dd-4d05-8a6c-a13d22c4cc0b.png">
+
+<img width="490" src="https://github.com/YamamotoDesu/CloudKit/blob/main/BabiFud/Gif/CloudKitDemo.gif">
+
 ## 1. Set Up Entitlements  
 <img width="606" src="https://user-images.githubusercontent.com/47273077/155251371-744389b8-c91a-4ce6-a6fd-5fbaebb5aed7.png">
 
