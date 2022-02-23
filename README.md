@@ -41,7 +41,9 @@ Example of a Record Type
 Example of a CKRecord
 <img width="379" src="https://user-images.githubusercontent.com/47273077/155258554-291200d4-3675-4805-b60d-b16873544873.png">
 
-## 5. Create CKQueries  
+----
+
+## 5. Create CKQueries(Example)  
 ```swift 
 import Foundation
 import CloudKit
@@ -59,4 +61,95 @@ final class Model {
   }
 }
 ```
+
+6. Fetch Records(Example)
+
+### Example of the Model
+```swift 
+import Foundation
+import CloudKit
+
+final class Model {
+  static let current = Model()
+
+  private(set) var establishments: [Establishment] = []
+  
+  func refresh() async throws {
+    let query = CKQuery(
+      recordType: "\(Establishment.self)",
+      predicate: .init(value: true)
+    )
+    
+    let database = CKContainer.default().privateCloudDatabase
+    let records = try await database.records(matching: query)
+      .matchResults.map { try $1.get() }
+  }
+}
+```
+
+### Example of the entity
+```swift 
+import UIKit
+import MapKit
+import CloudKit
+import CoreLocation
+
+class Establishment {
+  enum ChangingTable: Int {
+    case none
+    case womens
+    case mens
+    case both
+  }
+  
+  static let recordType = "Establishment"
+  private let id: CKRecord.ID
+  let name: String
+  let location: CLLocation
+  let coverPhoto: CKAsset?
+  let database: CKDatabase
+  let changingTable: ChangingTable
+  let kidsMenu: Bool
+  let healthyOption: Bool
+  let notes: [Note]
+  
+  init?(record: CKRecord, database: CKDatabase) async throws {
+    guard
+      let name = record["name"] as? String,
+      let location = record["location"] as? CLLocation
+    else { return nil }
+
+    id = record.recordID
+    self.name = name
+    self.location = location
+    coverPhoto = record["coverPhoto"] as? CKAsset
+    self.database = database
+    healthyOption = record["healthyOption"] as? Bool ?? false
+    kidsMenu = record["kidsMenu"] as? Bool ?? false
+
+    self.changingTable =
+      (record["changingTable"] as? Int).flatMap(ChangingTable.init)
+      ?? .none
+
+
+    notes = []
+  }
+
+  func loadCoverPhoto() async throws -> UIImage? {
+    nil
+  }
+}
+
+extension Establishment: Hashable {
+  static func == (lhs: Establishment, rhs: Establishment) -> Bool {
+    return lhs.id == rhs.id
+  }
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(id)
+  }
+}
+```
+
+
 
