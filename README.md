@@ -154,5 +154,20 @@ extension Establishment: Hashable {
 ### Run your App and Check out your received data
 <img width="1227"  src="https://user-images.githubusercontent.com/47273077/155268430-e80a947a-ca6e-4bfc-b1b9-cb4e75d81f6e.png">
 
+### Laod Store's Images 
+```swift
+  func loadCoverPhoto() async throws -> UIImage? {
+    guard let fileURL = coverPhoto.flatMap(\.fileURL)
+    else { return nil }
+    
+    return try await Task {
+      UIImage(data: try .init(contentsOf: fileURL))
+    }.value
+  }
+```
+
+<img width="490" src="https://user-images.githubusercontent.com/47273077/155269655-570a4cb3-c170-410d-b9d1-098b6564de17.png">
+
+<img width="490" src="https://user-images.githubusercontent.com/47273077/155269691-2cb8176e-307a-4b9c-8187-99dedca0a463.png">
 
 
