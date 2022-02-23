@@ -28,9 +28,9 @@ Example of a Record Type
 
 ------
 
-## 4. Create CKRecords  
-<img width="579" src="https://user-images.githubusercontent.com/47273077/155257993-7b4b2489-a45b-48e4-b7a4-bb839dae9f9c.png">
-
+## 4. Create CKRecords 
+<img width="604" alt="CloudKit_-_Records_と_CloudKit_README_md_at_main_·_YamamotoDesu_CloudKit" src="https://user-images.githubusercontent.com/47273077/155258704-0e6cc74d-1e5f-4448-acec-92c9609bb4b0.png">
+ 
 Example of a CKRecord
 <img width="379" src="https://user-images.githubusercontent.com/47273077/155258554-291200d4-3675-4805-b60d-b16873544873.png">
 
