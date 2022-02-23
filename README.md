@@ -80,7 +80,7 @@ final class Model {
       predicate: .init(value: true)
     )
     
-    let database = CKContainer.default().privateCloudDatabase
+    let database = CKContainer.default().publicCloudDatabase
     let records = try await database.records(matching: query)
       .matchResults.map { try $1.get() }
   }
