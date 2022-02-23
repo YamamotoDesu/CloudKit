@@ -12,3 +12,9 @@
 
 ### Set Your Container
 <img width="376"  src="https://user-images.githubusercontent.com/47273077/155256359-a821002c-8f54-4414-9dc9-cd1b4e3b5b0a.png">
+
+### Create New Record Type
+<img width="762" src="https://user-images.githubusercontent.com/47273077/155256777-318d1b2b-6985-4501-b780-66944563ee57.png">
+
+Example of a Record Type
+<img width="855" src="https://user-images.githubusercontent.com/47273077/155256960-bb094f60-aac0-4215-9605-10768bd77133.png">
