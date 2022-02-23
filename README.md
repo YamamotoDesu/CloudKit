@@ -7,6 +7,9 @@
 
 ------
 
+
+
+
 ## 2. Explore The CloudKit Console  
 ###  Open The Cloudkit Console 
 <img width="1375" src="https://user-images.githubusercontent.com/47273077/155252507-173b813a-3b67-47ab-b6f4-8cb2c790d8b2.png">
@@ -22,11 +25,15 @@ Example of a Record Type
 
 ------
 
+
+
 ## 3. Set Indexes to The New Record
 <img width="479" src="https://user-images.githubusercontent.com/47273077/155257232-65a6a2d4-88fd-4b6c-8860-4097e90ad058.png">
 <img width="514" src="https://user-images.githubusercontent.com/47273077/155257378-751c366c-6452-44b4-aa35-a535b336e225.png">
 
 ------
+
+
 
 ## 4. Create CKRecords 
 <img width="604" alt="CloudKit_-_Records_と_CloudKit_README_md_at_main_·_YamamotoDesu_CloudKit" src="https://user-images.githubusercontent.com/47273077/155258704-0e6cc74d-1e5f-4448-acec-92c9609bb4b0.png">
