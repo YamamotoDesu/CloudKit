@@ -41,3 +41,22 @@ Example of a Record Type
 Example of a CKRecord
 <img width="379" src="https://user-images.githubusercontent.com/47273077/155258554-291200d4-3675-4805-b60d-b16873544873.png">
 
+## 5. Create CKQueries  
+```swift 
+import Foundation
+import CloudKit
+
+final class Model {
+  static let current = Model()
+
+  private(set) var establishments: [Establishment] = []
+  
+  func refresh() async throws {
+    let query = CKQuery(
+      recordType: "\(Establishment.self)",
+      predicate: .init(value: true)
+    )
+  }
+}
+```
+
