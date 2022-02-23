@@ -13,8 +13,13 @@
 ### Set Your Container
 <img width="376"  src="https://user-images.githubusercontent.com/47273077/155256359-a821002c-8f54-4414-9dc9-cd1b4e3b5b0a.png">
 
-### Create New Record Type
+### Create a New Record Type
 <img width="762" src="https://user-images.githubusercontent.com/47273077/155256777-318d1b2b-6985-4501-b780-66944563ee57.png">
 
 Example of a Record Type
 <img width="855" src="https://user-images.githubusercontent.com/47273077/155256960-bb094f60-aac0-4215-9605-10768bd77133.png">
+
+
+## 3. Set Indexes to The New Record
+<img width="479" src="https://user-images.githubusercontent.com/47273077/155257232-65a6a2d4-88fd-4b6c-8860-4097e90ad058.png">
+<img width="514" src="https://user-images.githubusercontent.com/47273077/155257378-751c366c-6452-44b4-aa35-a535b336e225.png">
