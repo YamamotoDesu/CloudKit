@@ -5,6 +5,7 @@
 
 ![Entitlement](https://user-images.githubusercontent.com/47273077/155252000-c8b8b286-3e36-41f6-a921-96238b7df771.jpeg)
 
+------
 
 ## 2. Explore The CloudKit Console  
 ###  Open The Cloudkit Console 
@@ -19,7 +20,16 @@
 Example of a Record Type
 <img width="855" src="https://user-images.githubusercontent.com/47273077/155256960-bb094f60-aac0-4215-9605-10768bd77133.png">
 
+------
 
 ## 3. Set Indexes to The New Record
 <img width="479" src="https://user-images.githubusercontent.com/47273077/155257232-65a6a2d4-88fd-4b6c-8860-4097e90ad058.png">
 <img width="514" src="https://user-images.githubusercontent.com/47273077/155257378-751c366c-6452-44b4-aa35-a535b336e225.png">
+
+------
+
+## 4. Create CKRecords  
+<img width="579" src="https://user-images.githubusercontent.com/47273077/155257993-7b4b2489-a45b-48e4-b7a4-bb839dae9f9c.png">
+
+
+
